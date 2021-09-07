@@ -13,6 +13,11 @@ const users = require('./routes/usersRoutes');
 
 const port = process.env.PORT || 3000;
 
+if (app.get('env') == 'production') {
+    app.use(logger('common', { skip: function(req, res) { return res.statusCode < 400 }, stream: __dirname + '/../morgan.log' }));
+  } else {
+    app.use(logger('dev'));
+  }
 
 
 
@@ -34,10 +39,6 @@ users(app);
 app.listen(process.env.PORT || 3000, () => {
     console.log("Escuchando el puerto: 3000 http://localhost:"+port);
 });
-
-app.get('/hola', (req, res)=>{
-    res.send('kisama')
-})
 
 
 // ERROR HANDLER

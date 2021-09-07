@@ -14,11 +14,11 @@ types.setTypeParser(1114, function(stringValue) {
 
 
 const databaseConfig = {
-    'host': 'ec2-54-83-137-206.compute-1.amazonaws.com',
+    'host': '34.95.159.189',
     'port': 5432,
-    'database': 'd6t7b5ue5qs9p9',
-    'user': 'sffesrtpoctpke',
-    'password': 'b940e3b2c2901e665ddc1955cd96b9a49a574c15a364ddae884f742be2597455',
+    'database': 'postgres',
+    'user': 'postgres',
+    'password': 'Kakaroto95050*',
     'connectionLimit': 10,
     'connectTimeout': 30000
 
