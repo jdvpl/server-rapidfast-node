@@ -19,8 +19,7 @@ const databaseConfig = {
     'database': 'postgres',
     'user': 'postgres',
     'password': 'Kakaroto95050*',
-    'connectionLimit': 10,
-    'connectTimeout': 30000
+
 
 };
 
@@ -50,3 +49,5 @@ module.exports = db;
 //:
 //5432
 //d6t7b5ue5qs9p9
+
+//psql "sslmode=verify-ca sslrootcert=server-ca.pem sslcert=client-cert.pem sslkey=client-key.pem hostaddr=34.95.159.189 port=5432 user=postgres dbname=postgres"
